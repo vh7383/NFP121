@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>190</y>
+      <w>300</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Cercle extends Mesurable2D
+--
+-centre: Point
+-rayon: float
+-couleur: Color
+--
++translater(x: float, y: float): void
++getCentre(): Point
++getRayon(): float
++getDiametre(): float
++setRayon(rayon: float): void
++setDiametre(diametre: float): void 
++contient(): boolean
++getCouleur(): Color
++setCouleur(couleur: Color): void
++toString(): void
+Constructors
++Cercle(Point: centre, float: rayon)
++Cercle(Point: p1, Point: p2)
++Cercle(Point: p1, Point: p2, Color: color)
++creerCercle(Point: p1, Point: p2)</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

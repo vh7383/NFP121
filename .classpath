@@ -6,6 +6,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="TP01"/>
+	<classpathentry excluding="CycleVie.java|ExempleComprendre.java|ExempleComprendreTutor.java|ExempleErreur.java|ExempleSchema1.java|Point.java|SchemaParticulier.java|Segment.java|TestSegment.java" kind="src" path="TP01"/>
+	<classpathentry excluding="Point.java|PointTest.java" kind="src" path="TP02"/>
+	<classpathentry kind="src" path="TP03"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
