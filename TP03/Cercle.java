@@ -6,8 +6,8 @@ public class Cercle {
 	private Color couleur;
 	
 	public void translater(float x, float y) {
-		this.centre.setX(x);
-		this.centre.setY(y);
+		this.centre.setX(this.centre.getX()+x);
+		this.centre.setY(this.centre.getY()+y);
 	}
 	
 	public Point getCentre() {
@@ -31,7 +31,7 @@ public class Cercle {
 	}
 	
 	public boolean contient(Point p) {
-		return true;
+		return this.getCentre().distance(p)<=this.rayon;
 	}
 	
 	public Color getCouleur() {
@@ -57,9 +57,9 @@ public class Cercle {
 	}
 	
 	public Cercle(Point p1, Point p2) {
-		this.centre.setX((p1.getX()+p2.getX())/2);
-		this.centre.setY((p2.getY()+p2.getY())/2);
-		this.rayon = p1.distance(p2)/2;
+		Point p3 = new Point((p1.getX()+p2.getX())/2,(p1.getY()+p2.getY())/2);
+		this.centre = p3;
+		this.rayon = p3.distance(p1);
 		this.couleur = Color.blue;
 	}
 	
