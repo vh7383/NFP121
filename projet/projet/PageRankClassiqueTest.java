@@ -13,7 +13,8 @@ public class PageRankClassiqueTest {
 	@Before
 	public void setUp() {
 		this.configuration = new Configuration();
-		/* Question 2.1 Donnees pour le test
+		
+		/* Question 2.1 : donnees pour le test
 		public double alpha = 0.90;
 		public double epsilon = -1.0;
 		public int indice = 30;
